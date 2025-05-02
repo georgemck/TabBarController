@@ -11,15 +11,32 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print("viewDidLoad")        // Do any additional setup after loading the view.
     }
 
 
-    @IBAction func didTapButton(_ sender: UIButton) {
+    
+    @IBAction func goMintButton(_ sender: UIButton) {
+        
+            let vc = UIViewController()
+        vc.view.backgroundColor = .systemMint
+            
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    @IBAction func goOrangeButton(_ sender: UIButton) {
+            
+            let vc = UIViewController()
+            vc.view.backgroundColor = .systemOrange
+            
+            navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    @IBAction func goYellowButton(_ sender: UIButton) {
         let vc = UIViewController()
         vc.view.backgroundColor = .systemYellow
         
         navigationController?.pushViewController(vc, animated: true)    
     }
+    
 }
 

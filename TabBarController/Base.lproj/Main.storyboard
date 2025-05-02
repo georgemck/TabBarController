@@ -28,11 +28,11 @@
             </objects>
             <point key="canvasLocation" x="239" y="260"/>
         </scene>
-        <!--Item-->
+        <!--1stNavController-->
         <scene sceneID="Vpl-gH-XKB">
             <objects>
-                <navigationController storyboardIdentifier="First" id="mc2-Dh-FEL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="17335760" badgeValue="20" selectedImage="17335760" id="miP-Fe-OmX"/>
+                <navigationController storyboardIdentifier="First" id="mc2-Dh-FEL" userLabel="1stNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="17335760" badgeValue="1st" selectedImage="17335760" id="miP-Fe-OmX"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qRv-6v-hrZ">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -45,11 +45,11 @@
             </objects>
             <point key="canvasLocation" x="-527" y="1037"/>
         </scene>
-        <!--Gird-->
+        <!--2ndNavController-->
         <scene sceneID="MGl-NG-rbJ">
             <objects>
-                <navigationController title="Gird" id="sA6-5Q-oNm" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="17335760" badgeValue="30" selectedImage="17335760" id="MiX-wD-OjZ"/>
+                <navigationController title="Gird" id="sA6-5Q-oNm" userLabel="2ndNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="17335760" badgeValue="2nd" selectedImage="17335760" id="MiX-wD-OjZ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hoT-vc-waM">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -62,11 +62,11 @@
             </objects>
             <point key="canvasLocation" x="239" y="1037"/>
         </scene>
-        <!--Bar-->
+        <!--3rdNavController-->
         <scene sceneID="K25-Iy-fwk">
             <objects>
-                <navigationController id="BKT-0X-YAB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Bar" image="17335760" badgeValue="40" selectedImage="17335760" id="WOa-CP-SLs"/>
+                <navigationController id="BKT-0X-YAB" userLabel="3rdNavController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bar" image="17335760" badgeValue="3rd" selectedImage="17335760" id="WOa-CP-SLs"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uef-rK-mUB">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -79,26 +79,34 @@
             </objects>
             <point key="canvasLocation" x="1030" y="1037"/>
         </scene>
-        <!--View Controller-->
+        <!--First-->
         <scene sceneID="e6t-xc-aJ2">
             <objects>
                 <viewController id="g0B-pX-JfR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="First" id="ns7-cf-dVy" userLabel="First">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaL-ix-EUf">
+                                <rect key="frame" x="124" y="262" width="142" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Orange!"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Hej-Vw-QaF"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <accessibility key="accessibilityConfiguration" hint="First" identifier="First" label="First">
                             <bool key="isElement" value="NO"/>
                         </accessibility>
                     </view>
-                    <navigationItem key="navigationItem" id="nvQ-NS-h6j" userLabel="First"/>
+                    <navigationItem key="navigationItem" title="First" id="nvQ-NS-h6j" userLabel="First"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="shP-Bj-EQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-527" y="1750"/>
+            <point key="canvasLocation" x="-527.48091603053433" y="1750"/>
         </scene>
-        <!--View Controller-->
+        <!--Second-->
         <scene sceneID="7y8-8a-S2g">
             <objects>
                 <viewController id="kfj-Yg-kmt" customClass="ViewController" customModule="TabBarController" customModuleProvider="target" sceneMemberID="viewController">
@@ -107,37 +115,68 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YI-QH-FPp">
-                                <rect key="frame" x="172" y="266" width="75" height="35"/>
+                                <rect key="frame" x="145" y="264" width="104" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Yellow!"/>
                                 <connections>
-                                    <action selector="didTapButton:" destination="kfj-Yg-kmt" eventType="touchUpInside" id="H9s-We-Mzg"/>
+                                    <action selector="goYellowButton:" destination="kfj-Yg-kmt" eventType="touchUpInside" id="H9s-We-Mzg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTh-DO-m4x">
+                                <rect key="frame" x="51" y="413" width="142" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Orange!"/>
+                                <connections>
+                                    <action selector="goOrangeButton:" destination="kfj-Yg-kmt" eventType="touchUpInside" id="JoL-NF-LJk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieh-xA-2OB">
+                                <rect key="frame" x="197" y="511" width="89" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Mint!"/>
+                                <connections>
+                                    <action selector="goMintButton:" destination="Txi-SX-Sfh" eventType="touchUpInside" id="bkK-ph-e0g"/>
+                                    <action selector="goMintButton:" destination="kfj-Yg-kmt" eventType="touchUpInside" id="c0a-ao-Kwe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JQb-za-lXF"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OdY-aS-sg2"/>
+                    <navigationItem key="navigationItem" title="Second" id="OdY-aS-sg2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qz6-kQ-41m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="239" y="1750"/>
         </scene>
-        <!--View Controller-->
+        <!--Third-->
         <scene sceneID="35n-ff-5WQ">
             <objects>
                 <viewController id="2Gs-Gw-yIL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0jD-by-94M">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfk-Us-B5H">
+                                <rect key="frame" x="152" y="274" width="89" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go Mint!"/>
+                                <connections>
+                                    <action selector="goMintButton:" destination="Txi-SX-Sfh" eventType="touchUpInside" id="1G9-jv-YYb"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="zRQ-0h-KuF"/>
                         <color key="backgroundColor" systemColor="systemRedColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Esg-n1-EkQ"/>
+                    <navigationItem key="navigationItem" title="Third" id="Esg-n1-EkQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y0D-ML-UrX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Txi-SX-Sfh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1030" y="1750"/>
         </scene>
