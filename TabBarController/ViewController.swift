@@ -15,5 +15,11 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func didTapButton(_ sender: UIButton) {
+        let vc = UIViewController()
+        vc.view.backgroundColor = .systemYellow
+        
+        navigationController?.pushViewController(vc, animated: true)    
+    }
 }
 
